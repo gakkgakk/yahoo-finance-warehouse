@@ -1,0 +1,333 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "quoteSummary": {
+            "type": "object",
+            "properties": {
+                "result": {
+                    "type": "array",
+                    "items": [
+                        {
+                            "type": "object",
+                            "properties": {
+                                "institutionOwnership": {
+                                    "type": "object",
+                                    "properties": {
+                                        "maxAge": {
+                                            "type": "integer"
+                                        },
+                                        "ownershipList": {
+                                            "type": "array",
+                                            "items": {}
+                                        }
+                                    },
+                                    "required": [
+                                        "maxAge",
+                                        "ownershipList"
+                                    ]
+                                },
+                                "majorHoldersBreakdown": {
+                                    "type": "object",
+                                    "properties": {
+                                        "maxAge": {
+                                            "type": "integer"
+                                        },
+                                        "insidersPercentHeld": {
+                                            "type": "object",
+                                            "properties": {
+                                                "raw": {
+                                                    "type": "number"
+                                                },
+                                                "fmt": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "raw",
+                                                "fmt"
+                                            ]
+                                        },
+                                        "institutionsPercentHeld": {
+                                            "type": "object",
+                                            "properties": {
+                                                "raw": {
+                                                    "type": "number"
+                                                },
+                                                "fmt": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "raw",
+                                                "fmt"
+                                            ]
+                                        },
+                                        "institutionsFloatPercentHeld": {
+                                            "type": "object",
+                                            "properties": {
+                                                "raw": {
+                                                    "type": "number"
+                                                },
+                                                "fmt": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "raw",
+                                                "fmt"
+                                            ]
+                                        },
+                                        "institutionsCount": {
+                                            "type": "object",
+                                            "properties": {
+                                                "raw": {
+                                                    "type": "integer"
+                                                },
+                                                "fmt": {
+                                                    "type": "string"
+                                                },
+                                                "longFmt": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "raw",
+                                                "fmt",
+                                                "longFmt"
+                                            ]
+                                        }
+                                    },
+                                    "required": [
+                                        "maxAge",
+                                        "insidersPercentHeld",
+                                        "institutionsPercentHeld",
+                                        "institutionsFloatPercentHeld",
+                                        "institutionsCount"
+                                    ]
+                                },
+                                "insiderHolders": {
+                                    "type": "object",
+                                    "properties": {
+                                        "holders": {
+                                            "type": "array",
+                                            "items": {}
+                                        },
+                                        "maxAge": {
+                                            "type": "integer"
+                                        }
+                                    },
+                                    "required": [
+                                        "holders",
+                                        "maxAge"
+                                    ]
+                                },
+                                "majorDirectHolders": {
+                                    "type": "object",
+                                    "properties": {
+                                        "holders": {
+                                            "type": "array",
+                                            "items": {}
+                                        },
+                                        "maxAge": {
+                                            "type": "integer"
+                                        }
+                                    },
+                                    "required": [
+                                        "holders",
+                                        "maxAge"
+                                    ]
+                                },
+                                "netSharePurchaseActivity": {
+                                    "type": "object",
+                                    "properties": {
+                                        "maxAge": {
+                                            "type": "integer"
+                                        },
+                                        "period": {
+                                            "type": "string"
+                                        },
+                                        "buyInfoCount": {
+                                            "type": "object",
+                                            "properties": {
+                                                "raw": {
+                                                    "type": "integer"
+                                                },
+                                                "fmt": {
+                                                    "type": "null"
+                                                },
+                                                "longFmt": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "raw",
+                                                "fmt",
+                                                "longFmt"
+                                            ]
+                                        },
+                                        "buyInfoShares": {
+                                            "type": "object",
+                                            "properties": {
+                                                "raw": {
+                                                    "type": "integer"
+                                                },
+                                                "fmt": {
+                                                    "type": "null"
+                                                },
+                                                "longFmt": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "raw",
+                                                "fmt",
+                                                "longFmt"
+                                            ]
+                                        },
+                                        "sellInfoCount": {
+                                            "type": "object",
+                                            "properties": {
+                                                "raw": {
+                                                    "type": "integer"
+                                                },
+                                                "fmt": {
+                                                    "type": "null"
+                                                },
+                                                "longFmt": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "raw",
+                                                "fmt",
+                                                "longFmt"
+                                            ]
+                                        },
+                                        "netInfoCount": {
+                                            "type": "object",
+                                            "properties": {
+                                                "raw": {
+                                                    "type": "integer"
+                                                },
+                                                "fmt": {
+                                                    "type": "null"
+                                                },
+                                                "longFmt": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "raw",
+                                                "fmt",
+                                                "longFmt"
+                                            ]
+                                        },
+                                        "netInfoShares": {
+                                            "type": "object",
+                                            "properties": {
+                                                "raw": {
+                                                    "type": "integer"
+                                                },
+                                                "fmt": {
+                                                    "type": "null"
+                                                },
+                                                "longFmt": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "raw",
+                                                "fmt",
+                                                "longFmt"
+                                            ]
+                                        },
+                                        "netPercentInsiderShares": {
+                                            "type": "object",
+                                            "properties": {
+                                                "raw": {
+                                                    "type": "integer"
+                                                },
+                                                "fmt": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "raw",
+                                                "fmt"
+                                            ]
+                                        },
+                                        "totalInsiderShares": {
+                                            "type": "object",
+                                            "properties": {
+                                                "raw": {
+                                                    "type": "integer"
+                                                },
+                                                "fmt": {
+                                                    "type": "string"
+                                                },
+                                                "longFmt": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "raw",
+                                                "fmt",
+                                                "longFmt"
+                                            ]
+                                        }
+                                    },
+                                    "required": [
+                                        "maxAge",
+                                        "period",
+                                        "buyInfoCount",
+                                        "buyInfoShares",
+                                        "sellInfoCount",
+                                        "netInfoCount",
+                                        "netInfoShares",
+                                        "netPercentInsiderShares",
+                                        "totalInsiderShares"
+                                    ]
+                                },
+                                "fundOwnership": {
+                                    "type": "object",
+                                    "properties": {
+                                        "maxAge": {
+                                            "type": "integer"
+                                        },
+                                        "ownershipList": {
+                                            "type": "array",
+                                            "items": {}
+                                        }
+                                    },
+                                    "required": [
+                                        "maxAge",
+                                        "ownershipList"
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "institutionOwnership",
+                                "majorHoldersBreakdown",
+                                "insiderHolders",
+                                "majorDirectHolders",
+                                "netSharePurchaseActivity",
+                                "fundOwnership"
+                            ]
+                        }
+                    ]
+                },
+                "error": {
+                    "type": "null"
+                }
+            },
+            "required": [
+                "result",
+                "error"
+            ]
+        }
+    },
+    "required": [
+        "quoteSummary"
+    ]
+}

@@ -1,0 +1,458 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "quoteSummary": {
+            "type": "object",
+            "properties": {
+                "result": {
+                    "type": "array",
+                    "items": [
+                        {
+                            "type": "object",
+                            "properties": {
+                                "assetProfile": {
+                                    "type": "object",
+                                    "properties": {
+                                        "address1": {
+                                            "type": "string"
+                                        },
+                                        "address2": {
+                                            "type": "string"
+                                        },
+                                        "city": {
+                                            "type": "string"
+                                        },
+                                        "zip": {
+                                            "type": "string"
+                                        },
+                                        "country": {
+                                            "type": "string"
+                                        },
+                                        "phone": {
+                                            "type": "string"
+                                        },
+                                        "website": {
+                                            "type": "string"
+                                        },
+                                        "industry": {
+                                            "type": "string"
+                                        },
+                                        "sector": {
+                                            "type": "string"
+                                        },
+                                        "longBusinessSummary": {
+                                            "type": "string"
+                                        },
+                                        "fullTimeEmployees": {
+                                            "type": "integer"
+                                        },
+                                        "companyOfficers": {
+                                            "type": "array",
+                                            "items": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "maxAge": {
+                                                            "type": "integer"
+                                                        },
+                                                        "name": {
+                                                            "type": "string"
+                                                        },
+                                                        "age": {
+                                                            "type": "integer"
+                                                        },
+                                                        "title": {
+                                                            "type": "string"
+                                                        },
+                                                        "yearBorn": {
+                                                            "type": "integer"
+                                                        },
+                                                        "fiscalYear": {
+                                                            "type": "integer"
+                                                        },
+                                                        "totalPay": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "raw": {
+                                                                    "type": "integer"
+                                                                },
+                                                                "fmt": {
+                                                                    "type": "string"
+                                                                },
+                                                                "longFmt": {
+                                                                    "type": "string"
+                                                                }
+                                                            },
+                                                            "required": [
+                                                                "raw",
+                                                                "fmt",
+                                                                "longFmt"
+                                                            ]
+                                                        },
+                                                        "exercisedValue": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "raw": {
+                                                                    "type": "integer"
+                                                                },
+                                                                "fmt": {
+                                                                    "type": "null"
+                                                                },
+                                                                "longFmt": {
+                                                                    "type": "string"
+                                                                }
+                                                            },
+                                                            "required": [
+                                                                "raw",
+                                                                "fmt",
+                                                                "longFmt"
+                                                            ]
+                                                        },
+                                                        "unexercisedValue": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "raw": {
+                                                                    "type": "integer"
+                                                                },
+                                                                "fmt": {
+                                                                    "type": "null"
+                                                                },
+                                                                "longFmt": {
+                                                                    "type": "string"
+                                                                }
+                                                            },
+                                                            "required": [
+                                                                "raw",
+                                                                "fmt",
+                                                                "longFmt"
+                                                            ]
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "maxAge",
+                                                        "name",
+                                                        "age",
+                                                        "title",
+                                                        "yearBorn",
+                                                        "fiscalYear",
+                                                        "totalPay",
+                                                        "exercisedValue",
+                                                        "unexercisedValue"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "maxAge": {
+                                                            "type": "integer"
+                                                        },
+                                                        "name": {
+                                                            "type": "string"
+                                                        },
+                                                        "age": {
+                                                            "type": "integer"
+                                                        },
+                                                        "title": {
+                                                            "type": "string"
+                                                        },
+                                                        "yearBorn": {
+                                                            "type": "integer"
+                                                        },
+                                                        "fiscalYear": {
+                                                            "type": "integer"
+                                                        },
+                                                        "totalPay": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "raw": {
+                                                                    "type": "integer"
+                                                                },
+                                                                "fmt": {
+                                                                    "type": "string"
+                                                                },
+                                                                "longFmt": {
+                                                                    "type": "string"
+                                                                }
+                                                            },
+                                                            "required": [
+                                                                "raw",
+                                                                "fmt",
+                                                                "longFmt"
+                                                            ]
+                                                        },
+                                                        "exercisedValue": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "raw": {
+                                                                    "type": "integer"
+                                                                },
+                                                                "fmt": {
+                                                                    "type": "null"
+                                                                },
+                                                                "longFmt": {
+                                                                    "type": "string"
+                                                                }
+                                                            },
+                                                            "required": [
+                                                                "raw",
+                                                                "fmt",
+                                                                "longFmt"
+                                                            ]
+                                                        },
+                                                        "unexercisedValue": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "raw": {
+                                                                    "type": "integer"
+                                                                },
+                                                                "fmt": {
+                                                                    "type": "null"
+                                                                },
+                                                                "longFmt": {
+                                                                    "type": "string"
+                                                                }
+                                                            },
+                                                            "required": [
+                                                                "raw",
+                                                                "fmt",
+                                                                "longFmt"
+                                                            ]
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "maxAge",
+                                                        "name",
+                                                        "age",
+                                                        "title",
+                                                        "yearBorn",
+                                                        "fiscalYear",
+                                                        "totalPay",
+                                                        "exercisedValue",
+                                                        "unexercisedValue"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "maxAge": {
+                                                            "type": "integer"
+                                                        },
+                                                        "name": {
+                                                            "type": "string"
+                                                        },
+                                                        "title": {
+                                                            "type": "string"
+                                                        },
+                                                        "exercisedValue": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "raw": {
+                                                                    "type": "integer"
+                                                                },
+                                                                "fmt": {
+                                                                    "type": "null"
+                                                                },
+                                                                "longFmt": {
+                                                                    "type": "string"
+                                                                }
+                                                            },
+                                                            "required": [
+                                                                "raw",
+                                                                "fmt",
+                                                                "longFmt"
+                                                            ]
+                                                        },
+                                                        "unexercisedValue": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "raw": {
+                                                                    "type": "integer"
+                                                                },
+                                                                "fmt": {
+                                                                    "type": "null"
+                                                                },
+                                                                "longFmt": {
+                                                                    "type": "string"
+                                                                }
+                                                            },
+                                                            "required": [
+                                                                "raw",
+                                                                "fmt",
+                                                                "longFmt"
+                                                            ]
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "maxAge",
+                                                        "name",
+                                                        "title",
+                                                        "exercisedValue",
+                                                        "unexercisedValue"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "maxAge": {
+                                                            "type": "integer"
+                                                        },
+                                                        "name": {
+                                                            "type": "string"
+                                                        },
+                                                        "title": {
+                                                            "type": "string"
+                                                        },
+                                                        "exercisedValue": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "raw": {
+                                                                    "type": "integer"
+                                                                },
+                                                                "fmt": {
+                                                                    "type": "null"
+                                                                },
+                                                                "longFmt": {
+                                                                    "type": "string"
+                                                                }
+                                                            },
+                                                            "required": [
+                                                                "raw",
+                                                                "fmt",
+                                                                "longFmt"
+                                                            ]
+                                                        },
+                                                        "unexercisedValue": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "raw": {
+                                                                    "type": "integer"
+                                                                },
+                                                                "fmt": {
+                                                                    "type": "null"
+                                                                },
+                                                                "longFmt": {
+                                                                    "type": "string"
+                                                                }
+                                                            },
+                                                            "required": [
+                                                                "raw",
+                                                                "fmt",
+                                                                "longFmt"
+                                                            ]
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "maxAge",
+                                                        "name",
+                                                        "title",
+                                                        "exercisedValue",
+                                                        "unexercisedValue"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "maxAge": {
+                                                            "type": "integer"
+                                                        },
+                                                        "name": {
+                                                            "type": "string"
+                                                        },
+                                                        "title": {
+                                                            "type": "string"
+                                                        },
+                                                        "exercisedValue": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "raw": {
+                                                                    "type": "integer"
+                                                                },
+                                                                "fmt": {
+                                                                    "type": "null"
+                                                                },
+                                                                "longFmt": {
+                                                                    "type": "string"
+                                                                }
+                                                            },
+                                                            "required": [
+                                                                "raw",
+                                                                "fmt",
+                                                                "longFmt"
+                                                            ]
+                                                        },
+                                                        "unexercisedValue": {
+                                                            "type": "object",
+                                                            "properties": {
+                                                                "raw": {
+                                                                    "type": "integer"
+                                                                },
+                                                                "fmt": {
+                                                                    "type": "null"
+                                                                },
+                                                                "longFmt": {
+                                                                    "type": "string"
+                                                                }
+                                                            },
+                                                            "required": [
+                                                                "raw",
+                                                                "fmt",
+                                                                "longFmt"
+                                                            ]
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "maxAge",
+                                                        "name",
+                                                        "title",
+                                                        "exercisedValue",
+                                                        "unexercisedValue"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        "compensationAsOfEpochDate": {
+                                            "type": "integer"
+                                        },
+                                        "maxAge": {
+                                            "type": "integer"
+                                        }
+                                    },
+                                    "required": [
+                                        "address1",
+                                        "address2",
+                                        "city",
+                                        "zip",
+                                        "country",
+                                        "phone",
+                                        "website",
+                                        "industry",
+                                        "sector",
+                                        "longBusinessSummary",
+                                        "fullTimeEmployees",
+                                        "companyOfficers",
+                                        "compensationAsOfEpochDate",
+                                        "maxAge"
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "assetProfile"
+                            ]
+                        }
+                    ]
+                },
+                "error": {
+                    "type": "null"
+                }
+            },
+            "required": [
+                "result",
+                "error"
+            ]
+        }
+    },
+    "required": [
+        "quoteSummary"
+    ]
+}

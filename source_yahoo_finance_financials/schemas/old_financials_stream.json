@@ -1,0 +1,713 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "timeseries": {
+      "type": "object",
+      "properties": {
+        "result": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "meta": {
+                  "type": "object",
+                  "properties": {
+                    "symbol": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "type": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "string"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "symbol",
+                    "type"
+                  ]
+                },
+                "timestamp": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "integer"
+                    }
+                  ]
+                },
+                "trailingNetIncome": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "dataId": {
+                          "type": "integer"
+                        },
+                        "asOfDate": {
+                          "type": "string"
+                        },
+                        "periodType": {
+                          "type": "string"
+                        },
+                        "currencyCode": {
+                          "type": "string"
+                        },
+                        "reportedValue": {
+                          "type": "object",
+                          "properties": {
+                            "raw": {
+                              "type": "number"
+                            },
+                            "fmt": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "raw",
+                            "fmt"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "dataId",
+                        "asOfDate",
+                        "periodType",
+                        "currencyCode",
+                        "reportedValue"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "meta",
+                "timestamp",
+                "trailingNetIncome"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "meta": {
+                  "type": "object",
+                  "properties": {
+                    "symbol": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "type": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "string"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "symbol",
+                    "type"
+                  ]
+                },
+                "timestamp": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "integer"
+                    }
+                  ]
+                },
+                "trailingTotalExpenses": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "dataId": {
+                          "type": "integer"
+                        },
+                        "asOfDate": {
+                          "type": "string"
+                        },
+                        "periodType": {
+                          "type": "string"
+                        },
+                        "currencyCode": {
+                          "type": "string"
+                        },
+                        "reportedValue": {
+                          "type": "object",
+                          "properties": {
+                            "raw": {
+                              "type": "number"
+                            },
+                            "fmt": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "raw",
+                            "fmt"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "dataId",
+                        "asOfDate",
+                        "periodType",
+                        "currencyCode",
+                        "reportedValue"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "meta",
+                "timestamp",
+                "trailingTotalExpenses"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "meta": {
+                  "type": "object",
+                  "properties": {
+                    "symbol": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "type": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "string"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "symbol",
+                    "type"
+                  ]
+                },
+                "timestamp": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "integer"
+                    }
+                  ]
+                },
+                "annualTotalExpenses": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "dataId": {
+                          "type": "integer"
+                        },
+                        "asOfDate": {
+                          "type": "string"
+                        },
+                        "periodType": {
+                          "type": "string"
+                        },
+                        "currencyCode": {
+                          "type": "string"
+                        },
+                        "reportedValue": {
+                          "type": "object",
+                          "properties": {
+                            "raw": {
+                              "type": "number"
+                            },
+                            "fmt": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "raw",
+                            "fmt"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "dataId",
+                        "asOfDate",
+                        "periodType",
+                        "currencyCode",
+                        "reportedValue"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "dataId": {
+                          "type": "integer"
+                        },
+                        "asOfDate": {
+                          "type": "string"
+                        },
+                        "periodType": {
+                          "type": "string"
+                        },
+                        "currencyCode": {
+                          "type": "string"
+                        },
+                        "reportedValue": {
+                          "type": "object",
+                          "properties": {
+                            "raw": {
+                              "type": "number"
+                            },
+                            "fmt": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "raw",
+                            "fmt"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "dataId",
+                        "asOfDate",
+                        "periodType",
+                        "currencyCode",
+                        "reportedValue"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "dataId": {
+                          "type": "integer"
+                        },
+                        "asOfDate": {
+                          "type": "string"
+                        },
+                        "periodType": {
+                          "type": "string"
+                        },
+                        "currencyCode": {
+                          "type": "string"
+                        },
+                        "reportedValue": {
+                          "type": "object",
+                          "properties": {
+                            "raw": {
+                              "type": "number"
+                            },
+                            "fmt": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "raw",
+                            "fmt"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "dataId",
+                        "asOfDate",
+                        "periodType",
+                        "currencyCode",
+                        "reportedValue"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "dataId": {
+                          "type": "integer"
+                        },
+                        "asOfDate": {
+                          "type": "string"
+                        },
+                        "periodType": {
+                          "type": "string"
+                        },
+                        "currencyCode": {
+                          "type": "string"
+                        },
+                        "reportedValue": {
+                          "type": "object",
+                          "properties": {
+                            "raw": {
+                              "type": "number"
+                            },
+                            "fmt": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "raw",
+                            "fmt"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "dataId",
+                        "asOfDate",
+                        "periodType",
+                        "currencyCode",
+                        "reportedValue"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "meta",
+                "timestamp",
+                "annualTotalExpenses"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "meta": {
+                  "type": "object",
+                  "properties": {
+                    "symbol": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "type": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "string"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "symbol",
+                    "type"
+                  ]
+                },
+                "timestamp": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "integer"
+                    }
+                  ]
+                },
+                "annualNetIncome": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "dataId": {
+                          "type": "integer"
+                        },
+                        "asOfDate": {
+                          "type": "string"
+                        },
+                        "periodType": {
+                          "type": "string"
+                        },
+                        "currencyCode": {
+                          "type": "string"
+                        },
+                        "reportedValue": {
+                          "type": "object",
+                          "properties": {
+                            "raw": {
+                              "type": "number"
+                            },
+                            "fmt": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "raw",
+                            "fmt"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "dataId",
+                        "asOfDate",
+                        "periodType",
+                        "currencyCode",
+                        "reportedValue"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "dataId": {
+                          "type": "integer"
+                        },
+                        "asOfDate": {
+                          "type": "string"
+                        },
+                        "periodType": {
+                          "type": "string"
+                        },
+                        "currencyCode": {
+                          "type": "string"
+                        },
+                        "reportedValue": {
+                          "type": "object",
+                          "properties": {
+                            "raw": {
+                              "type": "number"
+                            },
+                            "fmt": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "raw",
+                            "fmt"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "dataId",
+                        "asOfDate",
+                        "periodType",
+                        "currencyCode",
+                        "reportedValue"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "dataId": {
+                          "type": "integer"
+                        },
+                        "asOfDate": {
+                          "type": "string"
+                        },
+                        "periodType": {
+                          "type": "string"
+                        },
+                        "currencyCode": {
+                          "type": "string"
+                        },
+                        "reportedValue": {
+                          "type": "object",
+                          "properties": {
+                            "raw": {
+                              "type": "number"
+                            },
+                            "fmt": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "raw",
+                            "fmt"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "dataId",
+                        "asOfDate",
+                        "periodType",
+                        "currencyCode",
+                        "reportedValue"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "dataId": {
+                          "type": "integer"
+                        },
+                        "asOfDate": {
+                          "type": "string"
+                        },
+                        "periodType": {
+                          "type": "string"
+                        },
+                        "currencyCode": {
+                          "type": "string"
+                        },
+                        "reportedValue": {
+                          "type": "object",
+                          "properties": {
+                            "raw": {
+                              "type": "number"
+                            },
+                            "fmt": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "raw",
+                            "fmt"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "dataId",
+                        "asOfDate",
+                        "periodType",
+                        "currencyCode",
+                        "reportedValue"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "meta",
+                "timestamp",
+                "annualNetIncome"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "meta": {
+                  "type": "object",
+                  "properties": {
+                    "symbol": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "type": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "string"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "symbol",
+                    "type"
+                  ]
+                },
+                "timestamp": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "integer"
+                    }
+                  ]
+                },
+                "trailingTotalRevenue": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "dataId": {
+                          "type": "integer"
+                        },
+                        "asOfDate": {
+                          "type": "string"
+                        },
+                        "periodType": {
+                          "type": "string"
+                        },
+                        "currencyCode": {
+                          "type": "string"
+                        },
+                        "reportedValue": {
+                          "type": "object",
+                          "properties": {
+                            "raw": {
+                              "type": "number"
+                            },
+                            "fmt": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "raw",
+                            "fmt"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "dataId",
+                        "asOfDate",
+                        "periodType",
+                        "currencyCode",
+                        "reportedValue"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "meta",
+                "timestamp",
+                "trailingTotalRevenue"
+              ]
+            }
+          ]
+        },
+        "error": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "result",
+        "error"
+      ]
+    }
+  },
+  "required": [
+    "timeseries"
+  ]
+}
