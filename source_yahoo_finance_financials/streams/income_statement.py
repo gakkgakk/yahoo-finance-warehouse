@@ -4,12 +4,19 @@ from .abstract_financial_stream import AbstractFinancialStream
 
 from .constants import INCOME_TYPE_PARAMETERS
 
+
 class IncomeStatement(AbstractFinancialStream):
     url_base = "https://query1.finance.yahoo.com/ws/fundamentals-timeseries/v1/finance/timeseries/"
 
     primary_key = None
 
-    def path(self, *, stream_state: Mapping[str, Any] = None, stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None) -> str:
+    def path(
+        self,
+        *,
+        stream_state: Mapping[str, Any] = None,
+        stream_slice: Mapping[str, Any] = None,
+        next_page_token: Mapping[str, Any] = None,
+    ) -> str:
         next_index = next_page_token or 0
 
         annual_types = ["annual" + element for element in INCOME_TYPE_PARAMETERS]

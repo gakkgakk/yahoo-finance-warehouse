@@ -14,8 +14,11 @@ from source_yahoo_finance_financials.streams.company import Company
 from source_yahoo_finance_financials.streams.ownership import Ownership
 from .streams.constants import BROWSER_HEADERS
 
+
 class SourceYahooFinancials(AbstractSource):
-    def check_connection(self, logger: logging.Logger, config: Mapping[str, Any]) -> Tuple[bool, Optional[Any]]:
+    def check_connection(
+        self, logger: logging.Logger, config: Mapping[str, Any]
+    ) -> Tuple[bool, Optional[Any]]:
         tickers = config["tickers"]
 
         if len(tickers) == 0:

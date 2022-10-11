@@ -5,7 +5,9 @@ import requests
 
 from airbyte_cdk.sources.streams.http import HttpStream
 
+
 from .constants import BROWSER_HEADERS
+
 
 class AbstractFinancialStream(HttpStream, ABC):
     primary_key = None
@@ -15,25 +17,44 @@ class AbstractFinancialStream(HttpStream, ABC):
         self.next_index = 0
         self.tickers = tickers
 
-    def next_page_token(self, response: requests.Response) -> Optional[Mapping[str, Any]]:
+    def next_page_token(
+        self, response: requests.Response
+    ) -> Optional[Mapping[str, Any]]:
         self.next_index += 1
 
         if self.next_index >= len(self.tickers):
             return None
-        
+
         return self.next_index
 
-    def request_params(self, stream_state: Mapping[str, Any], stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None) -> MutableMapping[str, Any]:
+    def request_params(
+        self,
+        stream_state: Mapping[str, Any],
+        stream_slice: Mapping[str, Any] = None,
+        next_page_token: Mapping[str, Any] = None,
+    ) -> MutableMapping[str, Any]:
         next_index = next_page_token or 0
 
-        return {
-            "symbol": self.tickers[next_index]
-        }
+        return {"symbol": self.tickers[next_index]}
 
-    def parse_response(self, response: requests.Response, *, stream_state: Mapping[str, Any], stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None) -> Iterable[Mapping]:
+    def parse_response(
+        self,
+        response: requests.Response,
+        *,
+        stream_state: Mapping[str, Any],
+        stream_slice: Mapping[str, Any] = None,
+        next_page_token: Mapping[str, Any] = None
+    ) -> Iterable[Mapping]:
         return [response.json()]
 
-    def parse_response(self, response: requests.Response, *, stream_state: Mapping[str, Any], stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None) -> Iterable[Mapping]:
+    def parse_response(
+        self,
+        response: requests.Response,
+        *,
+        stream_state: Mapping[str, Any],
+        stream_slice: Mapping[str, Any] = None,
+        next_page_token: Mapping[str, Any] = None
+    ) -> Iterable[Mapping]:
         response_data = response.json()
 
         try:
@@ -46,7 +67,4 @@ class AbstractFinancialStream(HttpStream, ABC):
     def request_headers(self, **kwargs) -> Mapping[str, Any]:
         base_headers = super().request_headers(**kwargs)
 
-        return {
-            **base_headers,
-            **BROWSER_HEADERS
-        }
+        return {**base_headers, **BROWSER_HEADERS}
