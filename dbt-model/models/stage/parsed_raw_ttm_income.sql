@@ -1,0 +1,23 @@
+{{
+    parse_raw_yahoo_financial_json(
+        'yahoo_financials',
+        '_airbyte_raw_income_statement',
+        [
+            'trailingNetIncome',
+            'trailingTotalRevenue',
+            'trailingTotalExpenses',
+            'trailingCostOfRevenue',
+            'trailingGrossProfit',
+            'trailingOperatingExpense',
+            'trailingEBIT',
+            'trailingEBITDA',
+            'trailingNetIncomeCommonStockholders',
+            'trailingOperatingRevenue',
+            'trailingResearchAndDevelopment',
+            'trailingDilutedEPS',
+            'trailingBasicEPS',
+            'trailingOperatingIncome',
+            'trailingAmortization'
+        ]
+    )
+}}

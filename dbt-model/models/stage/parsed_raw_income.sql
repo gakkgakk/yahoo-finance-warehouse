@@ -1,0 +1,23 @@
+{{
+    parse_raw_yahoo_financial_json(
+        'yahoo_financials',
+        '_airbyte_raw_income_statement',
+        [
+            'annualNetIncome',
+            'annualTotalRevenue',
+            'annualTotalExpenses',
+            'annualCostOfRevenue',
+            'annualGrossProfit',
+            'annualOperatingExpense',
+            'annualEBIT',
+            'annualEBITDA',
+            'annualNetIncomeCommonStockholders',
+            'annualOperatingRevenue',
+            'annualResearchAndDevelopment',
+            'annualDilutedEPS',
+            'annualBasicEPS',
+            'annualOperatingIncome',
+            'annualAmortization'
+        ]
+    )
+}}

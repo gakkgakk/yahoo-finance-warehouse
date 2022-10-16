@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: yahoo_financials
+    database: postgres
+    schema: raw_data
+
+    tables:
+    - name: _airbyte_raw_ownership
+    - name: _airbyte_raw_balance_statement
+    - name: _airbyte_raw_cashflow_statement
+    - name: _airbyte_raw_company
+    - name: _airbyte_raw_income_statement
+    - name: _airbyte_raw_price

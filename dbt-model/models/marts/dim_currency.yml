@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_currency
+    description: dimension for currencies
+
+    columns:
+      - name: ticker
+        description: ticker of the company
+      - name: free_cash_flow
+        description: free cash flow for the reported period

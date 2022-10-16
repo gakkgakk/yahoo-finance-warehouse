@@ -1,0 +1,9 @@
+{{
+    parse_raw_yahoo_financial_json(
+        'yahoo_financials',
+        '_airbyte_raw_cashflow_statement',
+        [
+            'annualFreeCashFlow',
+        ]
+    )
+}}
