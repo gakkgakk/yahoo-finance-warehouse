@@ -1,0 +1,11 @@
+yahoo:
+  outputs:
+    dev:
+      type: postgres
+      threads: 2
+      host: localhost
+      port: 5432
+      user: postgres
+      pass: postgres
+      dbname: postgres
+      schema: analytics
