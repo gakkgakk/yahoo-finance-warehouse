@@ -1,8 +1,8 @@
 version: 2
 
 models:
-  - name: dim_currency
-    description: dimension for currencies
+  - name: fact_stock_price
+    description: stock price fact table
 
     columns:
       - name: ticker

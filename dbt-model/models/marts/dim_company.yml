@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: dim_company
+    description: (TODO) dimension for company information (mostly based on company stream in Yahoo Finance Financials)
+
+    columns:
+      - name: ticker
+        description: ticker of the company

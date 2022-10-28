@@ -1,4 +1,4 @@
-yahoo:
+yahoo_finance_warehouse:
   outputs:
     dev:
       type: postgres

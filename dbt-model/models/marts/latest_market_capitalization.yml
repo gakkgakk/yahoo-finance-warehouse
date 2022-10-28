@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: latest_market_capitalization
+    description: (remove this?) the latest market capitalization of company
+
+    columns:
+      - name: ticker
+        description: ticker of the company

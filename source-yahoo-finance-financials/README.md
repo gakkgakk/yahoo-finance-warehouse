@@ -3,7 +3,7 @@
 This is the repository for the Yahoo Finance Financials source connector, written in Python.
 For information about how to use this connector within Airbyte, see [the documentation](https://docs.airbyte.io/integrations/sources/yahoo-finance-financials).
 
-Much of the implementation is inspired by the Yahoo Finance Price connector written by Luca Crema.
+Much of the implementation is inspired by the [Yahoo Finance Price](https://github.com/airbytehq/airbyte/tree/master/airbyte-integrations/connectors/source-yahoo-finance-price) connector written by [Luca Crema](https://github.com/CremaLuca).
 
 ## Local development
 

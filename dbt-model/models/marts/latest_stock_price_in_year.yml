@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: latest_stock_price_in_year
+    description: think this is used to generate market capitalization
+
+    columns:
+      - name: ticker
+        description: ticker of the company

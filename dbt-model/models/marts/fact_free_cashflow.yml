@@ -1,8 +1,8 @@
 version: 2
 
 models:
-  - name: dim_currency
-    description: dimension for currencies
+  - name: fact_free_cashflow
+    description: free cash flow fact table
 
     columns:
       - name: ticker
