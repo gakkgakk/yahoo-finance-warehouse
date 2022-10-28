@@ -82,7 +82,7 @@ Add the source-yahoo-finance-financials connector by clicking Settings (at the b
 
 * Connector display name: Yahoo Finance Financials
 * Docker repository name: travbula/source-yahoo-finance-financials
-* Docker image tag: 0.30
+* Docker image tag: 0.1.30
 * Connector Documentation URL: https://travbula.no
 
 #### Add database destination
