@@ -1,8 +1,11 @@
-# this sets up a database to host the dataversion: '3.1'
+# this sets up a database to host the data
+version: '3.8'
 services:
 
-  db:
+  warehouse:
     image: postgres
+    networks:
+      - warehouse-network
     restart: always
     environment:
       POSTGRES_USER: postgres
@@ -16,9 +19,14 @@ services:
   # database admin gui
   adminer:
     image: adminer
+    networks:
+      - warehouse-network
     restart: always
     ports:
       - 8090:8080
 
 volumes:
   new_postgres_volume: {}
+
+networks:
+  warehouse-network: {}

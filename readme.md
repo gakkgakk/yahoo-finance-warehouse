@@ -17,6 +17,8 @@ Todo:
 * add airbyte configuration files
 * add lightdash metrics
 
+Tip: If you're tired of managing docker containers by running commands all the time, check out [lazydocker](https://github.com/jesseduffield/lazydocker) and/or the [docker extension](https://code.visualstudio.com/docs/containers/overview) for VSCode.
+
 ## Warehouse setup
 
 This section shows how to set up stuff on Linux. Most of the stuff runs in docker containers so it shouldn't be too different on other operating systems.
@@ -60,13 +62,7 @@ Did the commands run successfully? If so, let's go to the next step of loading d
 
 #### Airbyte setup
 
-Step 1, clone the Airbyte repository (maybe it's enough to just copy their docker-compose.yml file?). Tips: clone it into a different folder than this repository.
-
-```sh
-git clone https://github.com/airbytehq/airbyte.git
-```
-
-Enter the airbyte repository folder and run
+Enter the airbyte folder folder and run
 
 ```sh
 docker-compose up
@@ -219,16 +215,14 @@ Open the documentation in your web browser at localhost:9000.
 
 ### Visualize data with Lightdash
 
-(WIP: Have not been able to get this to work yet)
-
-Clone Lightdash repo and run their install script
+Enter lightdash folder and run
 
 ```sh
-git clone https://github.com/lightdash/lightdash
-cd lightdash
-./scripts/install.sh
+docker-compose --env-file ./.env.fast-install -f docker-compose.yml up --detach --remove-orphans || true
 ```
 
 For more help, see their [docs](https://docs.lightdash.com/get-started/setup-lightdash/install-lightdash/#deploy-locally-with-our-installation-script).
 
 Open the Lightdash webclient at localhost:8080 and follow the instructions for setting up
+
+For hostname to Warehouse connection, use warehouse (or whatever else the docker container hosting the data warehouse is called).
