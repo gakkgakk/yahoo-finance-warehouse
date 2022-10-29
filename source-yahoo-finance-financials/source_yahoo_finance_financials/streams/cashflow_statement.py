@@ -2,7 +2,7 @@ from typing import Any, Mapping
 
 from .abstract_financial_stream import AbstractFinancialStream
 
-from .constants import CASHFLOW_TYPE_PARAMETERS
+from .constants import CASHFLOW_TYPE_PARAMETERS, PERIOD1, PERIOD2
 
 
 class CashflowStatement(AbstractFinancialStream):
@@ -22,4 +22,4 @@ class CashflowStatement(AbstractFinancialStream):
 
         type_string = "%2C".join(annual_types + trailing_types)
 
-        return f"{self.tickers[next_index]}?lang=en-US&region=US&type={type_string}&merge=false&period1=493590046&period2=1664481730"
+        return f"{self.tickers[next_index]}?lang=en-US&region=US&type={type_string}&merge=false&period1={PERIOD1}&period2={PERIOD2}"

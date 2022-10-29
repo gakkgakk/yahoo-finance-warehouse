@@ -203,3 +203,13 @@ CASHFLOW_TYPE_PARAMETERS = [
 COMPANY_TYPE_PARAMETERS = []
 
 OWNERSHIP_TYPE_PARAMETERS = []
+
+from datetime import datetime
+from dateutil.relativedelta import relativedelta
+
+TODAY = datetime.today()
+FIVE_YEARS = relativedelta(years=5)
+FIVE_YEARS_AGO = TODAY - FIVE_YEARS
+
+PERIOD1 = int(FIVE_YEARS_AGO.timestamp())
+PERIOD2 = int(TODAY.timestamp())
