@@ -9,9 +9,13 @@ models:
         description: ticker of the company
       - name: date
         description: date of stock price
+        meta:
+          type: date
       - name: close
         description: stock price close
       - name: ordinary_shares_number
         description: the number of shares listed in the latest quarterly balance statement
       - name: market_capitalization
-        description: approximately how much the company is worth according to the all-knowing and wise market which is never incorrect because all of the available information is priced into the market capitalization no matter the circumstances
+        description: "approximately how much the company is worth according to the all-knowing and wise market which is never incorrect because all of the available information is priced into the market capitalization no matter the circumstances ([read more](https://www.investopedia.com/terms/m/marketcapitalization.asp))"
+        meta:
+          type: number

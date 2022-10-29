@@ -7,5 +7,16 @@ models:
     columns:
       - name: ticker
         description: ticker of the company
-      - name: free_cash_flow
-        description: free cash flow for the reported period
+      - name: date
+        description: date
+      - name: net_income
+        description: net income
+        meta:
+          type: number
+          metrics:
+            total_income:
+              label: 'Total income'
+              type: sum
+            average_income:
+              label: 'Average income'
+              type: average

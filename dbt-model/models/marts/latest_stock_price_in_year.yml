@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: latest_stock_price_in_year
-    description: think this is used to generate market capitalization
+    description: think this is used to generate market capitalization. the reason that the latest stock price in the year is needed is that the date of the annual report does not always match the date of the latest stock price in the year
 
     columns:
       - name: ticker

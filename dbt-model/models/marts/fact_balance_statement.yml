@@ -2,8 +2,28 @@ version: 2
 
 models:
   - name: fact_balance_statement
-    description: balance statement fact table
+    description: balance statement fact table 3 years back in time or something + the latest quarterly statement
 
     columns:
       - name: ticker
         description: ticker of the company
+      - name: currency
+        description: currency of the values in the statement(?)
+      - name: stockholders_equity
+        description: "[stockholders equity](https://www.investopedia.com/terms/s/stockholdersequity.asp)"
+      - name: tangible_book_value
+        description: "[tangible book value](https://www.investopedia.com/terms/t/tbvps.asp)"
+      - name: total_assets
+        description: "[total assets](https://www.wallstreetmojo.com/total-assets/)"
+      - name: net_debt
+        description: "[net debt](https://corporatefinanceinstitute.com/resources/knowledge/finance/net-debt/)"
+      - name: current_debt
+        description: "[current debt](https://corporatefinanceinstitute.com/resources/knowledge/accounting/current-debt/)"
+      - name: accounts_receivable
+        description: "[accounts receivable](https://corporatefinanceinstitute.com/resources/knowledge/accounting/quality-of-accounts-receivables/)"
+      - name: cash_equivalents
+        description: "[cash equivalents](https://corporatefinanceinstitute.com/resources/knowledge/accounting/quality-of-accounts-receivables/)"
+      - name: goodwill
+        description: "[goodwill](https://corporatefinanceinstitute.com/resources/knowledge/accounting/goodwill/)"
+      - name: working_capital
+        description: "[working capital](https://www.investopedia.com/terms/w/workingcapital.asp)"

@@ -7,3 +7,15 @@ models:
     columns:
       - name: ticker
         description: ticker of the company
+      - name: currency
+        description: currency the ticker is listed in on the stock exchange
+      - name: date
+        description: date of pricing
+      - name: low
+        description: lowest price of date 
+      - name: high
+        description: highest price of date 
+      - name: open
+        description: first price of date 
+      - name: close
+        description: last price of date 
