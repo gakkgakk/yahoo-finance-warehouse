@@ -2,6 +2,7 @@ agate==1.6.3
 altair==4.2.0
 attrs==22.1.0
 Babel==2.10.3
+backports.zoneinfo==0.2.1
 blinker==1.5
 bottle==0.12.23
 cachetools==5.2.0
@@ -13,10 +14,10 @@ colorama==0.4.5
 commonmark==0.9.1
 cycler==0.11.0
 dbt-client==0.1.3
-dbt-core==1.2.2
+dbt-core==1.3.0
 dbt-extractor==0.4.1
 dbt-osmosis==0.7.16
-dbt-postgres==1.2.2
+dbt-postgres==1.3.0
 decorator==5.1.1
 entrypoints==0.4
 feedparser==6.0.10
@@ -31,14 +32,14 @@ idna==3.4
 ImageHash==4.3.1
 importlib-metadata==5.0.0
 isodate==0.6.1
-Jinja2==2.11.3
+Jinja2==3.1.2
 joblib==1.1.0
 jsonschema==3.2.0
 kiwisolver==1.4.4
 leather==0.3.4
 Logbook==1.5.3
 MarkupSafe==2.0.1
-mashumaro==2.9
+mashumaro==3.0.4
 matplotlib==3.5.3
 minimal-snowplow-tracker==0.0.2
 missingno==0.5.1
@@ -51,6 +52,7 @@ packaging==21.3
 pandas==1.5.0
 pandas-profiling==3.3.0
 parsedatetime==2.4
+pathspec==0.9.0
 patsy==0.5.2
 phik==0.12.2
 Pillow==9.2.0

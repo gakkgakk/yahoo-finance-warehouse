@@ -199,7 +199,7 @@ If this was successful, your datawarehouse should have a bunch of views in the `
 * `latest_stock_price_in_year`
 * `market_capitalization`
 
-See more information about these in the documentation.
+See more information about these in the documentation generated in the next step.
 
 #### Browse the documentation
 
@@ -219,4 +219,16 @@ Open the documentation in your web browser at localhost:9000.
 
 ### Visualize data with Lightdash
 
-Todo
+(WIP: Have not been able to get this to work yet)
+
+Clone Lightdash repo and run their install script
+
+```sh
+git clone https://github.com/lightdash/lightdash
+cd lightdash
+./scripts/install.sh
+```
+
+For more help, see their [docs](https://docs.lightdash.com/get-started/setup-lightdash/install-lightdash/#deploy-locally-with-our-installation-script).
+
+Open the Lightdash webclient at localhost:8080 and follow the instructions for setting up

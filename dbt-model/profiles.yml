@@ -1,5 +1,15 @@
 yahoo_finance_warehouse:
   outputs:
+    default:
+      type: postgres
+      threads: 2
+      host: localhost
+      port: 5432
+      user: postgres
+      pass: postgres
+      dbname: postgres
+      schema: analytics
+
     dev:
       type: postgres
       threads: 2
