@@ -1,8 +1,8 @@
 # Yahoo finance warehouse
 
-This is a repository for fetching, storing, modeling and analysing financial data from yahoo finance. The tools used are postgres for saving data, Airbyte for fetching data, dbt for modeling data and at some point Lightdash for visualizing data.
+This is a repository for fetching, storing, modeling and analysing financial data from yahoo finance. The tools used are [postgres](https://github.com/postgres/postgres) for saving data, [Airbyte](https://github.com/airbytehq/airbyte) for fetching data, [dbt](https://github.com/dbt-labs/dbt-core) for modeling data and at some point [Lightdash](https://github.com/lightdash/lightdash) for visualizing data.
 
-See [Warehouse setup](#warehouse-setup) below for a guide of how to go from no data to visualizing your sweet sweet data in Lightdash.
+See [Warehouse setup](#warehouse-setup) below for a guide of how to set things up.
 
 The project currently contains
 
@@ -12,6 +12,7 @@ The project currently contains
 
 Todo:
 
+* get lightdash to connect to postgres
 * add airbyte configuration files
 * add lightdash metrics
 
