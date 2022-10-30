@@ -80,6 +80,8 @@ Add the source-yahoo-finance-financials connector by clicking Settings (at the b
 * Docker image tag: 0.1.30
 * Connector Documentation URL: https://travbula.no
 
+Do the same with airbyte/source-yahoo-finance-price with tag 0.1.0.
+
 #### Add database destination
 
 Click Destinations, + New destination, choose type Postgres. Suggested form text:
