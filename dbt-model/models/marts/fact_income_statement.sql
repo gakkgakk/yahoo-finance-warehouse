@@ -7,9 +7,15 @@ ttm_income as (
 ),
 
 final as (
-    select * from annual_income_statement
+    select
+        *,
+        EXTRACT(YEAR FROM date) as year
+    from annual_income_statement
     union
-    select * from ttm_income
+    select
+        * ,
+        EXTRACT(YEAR FROM date) as year
+    from ttm_income
 )
 
 select distinct * from final

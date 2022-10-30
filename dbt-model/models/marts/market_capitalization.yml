@@ -11,6 +11,10 @@ models:
         description: date of stock price
         meta:
           type: date
+      - name: currency
+        description: currency of price listing
+        meta:
+          type: string
       - name: close
         description: stock price close
       - name: ordinary_shares_number
@@ -19,3 +23,15 @@ models:
         description: "approximately how much the company is worth according to the all-knowing and wise market which is never incorrect because all of the available information is priced into the market capitalization no matter the circumstances ([read more](https://www.investopedia.com/terms/m/marketcapitalization.asp))"
         meta:
           type: number
+          metrics:
+            market_cap:
+              label: 'Market Capitalization (avg)'
+              type: average
+      - name: net_income
+        description: "net income from the same year"
+        meta:
+          type: number
+          metrics:
+            income:
+              label: 'Net Income (avg)'
+              type: average
