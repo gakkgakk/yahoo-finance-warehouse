@@ -7,14 +7,13 @@ See [Warehouse setup](#warehouse-setup) below for a guide of how to set things u
 The project currently contains
 
 * postgres database configuration in `database`
-* airbyte source for yahoo finance financials in `source-yahoo-finance-financials`
+* airbyte setup and source for yahoo finance financials in `airbyte`
 * dbt project modeling yahoo finance stuff in `dbt-model`
+* lightdash setup in `lightdash`
 
 Todo:
 
-* get lightdash to connect to postgres
-* add airbyte configuration files
-* add lightdash metrics
+* figure out how to get adding of airbyte resources with octavia cli to work
 
 Tip: If you're tired of managing docker containers by running commands all the time, check out [lazydocker](https://github.com/jesseduffield/lazydocker) and/or the [docker extension](https://code.visualstudio.com/docs/containers/overview) for VSCode.
 
