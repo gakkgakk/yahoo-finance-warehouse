@@ -5,18 +5,18 @@ models:
     description: dimension for currencies
 
     columns:
-      - name: ticker
-        description: ticker of the company
+      - name: currency
+        description: currency of the company
         meta:
           type: string
           joins:
             - join: fact_balance_statement
-              sql_on: ${dim_currency.ticker} = ${fact_balance_statement.ticker}
+              sql_on: ${dim_currency.currency} = ${fact_balance_statement.currency}
             - join: fact_income_statement
-              sql_on: ${dim_currency.ticker} = ${fact_income_statement.ticker}
+              sql_on: ${dim_currency.currency} = ${fact_income_statement.currency}
             - join: fact_cashflow_statement
-              sql_on: ${dim_currency.ticker} = ${fact_cashflow_statement.ticker}
+              sql_on: ${dim_currency.currency} = ${fact_cashflow_statement.currency}
             - join: fact_stock_price
-              sql_on: ${dim_currency.ticker} = ${fact_stock_price.ticker}
+              sql_on: ${dim_currency.currency} = ${fact_stock_price.currency}
             - join: market_capitalization
-              sql_on: ${dim_currency.ticker} = ${market_capitalization.ticker}
+              sql_on: ${dim_currency.currency} = ${market_capitalization.currency}
