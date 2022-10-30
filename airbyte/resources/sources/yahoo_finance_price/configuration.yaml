@@ -1,0 +1,9 @@
+resource_name: Yahoo Finance Price
+definition_type: source
+definition_id: 620ac44c-a7ce-4d54-a8ba-0060344be053
+definition_image: airbyte/source-yahoo-finance-price
+definition_version: 0.1.0
+configuration:
+  range: 5y
+  tickers: META, AMZN, SALM.OL, MOWI.OL, STB.OL, ZOMD.V, SDSD.OL
+  interval: 1d

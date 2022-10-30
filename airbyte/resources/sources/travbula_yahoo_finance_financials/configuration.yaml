@@ -1,0 +1,14 @@
+resource_name: Travbula Yahoo Finance Financials
+definition_type: source
+definition_id: 06000330-258f-4fe4-89b5-c556e0df505f
+definition_image: travbula/source-yahoo-finance-financials
+definition_version: 0.1.32
+configuration:
+  tickers:
+  - META
+  - AMZN
+  - SALM.OL
+  - MOWI.OL
+  - STB.OL
+  - ZOMD.V
+  - SDSD.OL

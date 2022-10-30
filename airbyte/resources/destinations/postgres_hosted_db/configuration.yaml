@@ -1,0 +1,17 @@
+resource_name: Postgres Hosted DB
+definition_type: destination
+definition_id: 25c5221d-dce2-4163-ade9-739ef790f503
+definition_image: airbyte/destination-postgres
+definition_version: 0.3.26
+configuration:
+  ssl: false
+  host: localhost
+  port: 5432
+  schema: raw_data
+  database: postgres
+  password: 'super_duper_secret'
+  ssl_mode:
+    mode: disable
+  username: airbyte_user
+  tunnel_method:
+    tunnel_method: NO_TUNNEL

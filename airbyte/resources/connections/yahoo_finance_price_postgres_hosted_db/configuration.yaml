@@ -1,0 +1,209 @@
+definition_type: connection
+resource_name: Yahoo Finance Price <> Postgres Hosted DB
+source_configuration_path: sources/yahoo_finance_price/configuration.yaml
+destination_configuration_path: destinations/postgres_hosted_db/configuration.yaml
+configuration:
+  sync_catalog:
+    streams:
+    - stream:
+        name: price
+        json_schema:
+          type: object
+          $schema: http://json-schema.org/draft-04/schema#
+          required:
+          - chart
+          properties:
+            chart:
+              type: object
+              properties:
+                error:
+                  type: 'null'
+                result:
+                  type: array
+                  items:
+                    type: object
+                    required:
+                    - meta
+                    - timestamp
+                    - indicators
+                    properties:
+                      meta:
+                        type: object
+                        properties:
+                          range:
+                            type: string
+                          scale:
+                            type: integer
+                          symbol:
+                            type: string
+                          currency:
+                            type: string
+                          timezone:
+                            type: string
+                          gmtoffset:
+                            type: integer
+                          priceHint:
+                            type: integer
+                          validRanges:
+                            type: array
+                            items:
+                              type: string
+                          exchangeName:
+                            type: string
+                          previousClose:
+                            type: number
+                          firstTradeDate:
+                            type: integer
+                          instrumentType:
+                            type: string
+                          tradingPeriods:
+                            type: array
+                            items:
+                              type: array
+                              items:
+                                type: object
+                                required:
+                                - timezone
+                                - end
+                                - start
+                                - gmtoffset
+                                properties:
+                                  end:
+                                    type: integer
+                                  start:
+                                    type: integer
+                                  timezone:
+                                    type: string
+                                  gmtoffset:
+                                    type: integer
+                          dataGranularity:
+                            type: string
+                          regularMarketTime:
+                            type: integer
+                          chartPreviousClose:
+                            type: number
+                          regularMarketPrice:
+                            type: number
+                          currentTradingPeriod:
+                            type: object
+                            required:
+                            - pre
+                            - regular
+                            - post
+                            properties:
+                              pre:
+                                type: object
+                                required:
+                                - timezone
+                                - end
+                                - start
+                                - gmtoffset
+                                properties:
+                                  end:
+                                    type: integer
+                                  start:
+                                    type: integer
+                                  timezone:
+                                    type: string
+                                  gmtoffset:
+                                    type: integer
+                              post:
+                                type: object
+                                required:
+                                - timezone
+                                - end
+                                - start
+                                - gmtoffset
+                                properties:
+                                  end:
+                                    type: integer
+                                  start:
+                                    type: integer
+                                  timezone:
+                                    type: string
+                                  gmtoffset:
+                                    type: integer
+                              regular:
+                                type: object
+                                required:
+                                - timezone
+                                - end
+                                - start
+                                - gmtoffset
+                                properties:
+                                  end:
+                                    type: integer
+                                  start:
+                                    type: integer
+                                  timezone:
+                                    type: string
+                                  gmtoffset:
+                                    type: integer
+                          exchangeTimezoneName:
+                            type: string
+                      timestamp:
+                        type: array
+                        items:
+                          type: integer
+                      indicators:
+                        type: object
+                        required:
+                        - quote
+                        properties:
+                          quote:
+                            type: array
+                            items:
+                              type: object
+                              required:
+                              - volume
+                              - high
+                              - close
+                              - low
+                              - open
+                              properties:
+                                low:
+                                  type: array
+                                  items:
+                                    type:
+                                    - number
+                                    - 'null'
+                                high:
+                                  type: array
+                                  items:
+                                    type:
+                                    - number
+                                    - 'null'
+                                open:
+                                  type: array
+                                  items:
+                                    type:
+                                    - number
+                                    - 'null'
+                                close:
+                                  type: array
+                                  items:
+                                    type:
+                                    - number
+                                    - 'null'
+                                volume:
+                                  type: array
+                                  items:
+                                    type:
+                                    - integer
+                                    - 'null'
+        supported_sync_modes:
+        - full_refresh
+        default_cursor_field: []
+        source_defined_primary_key: []
+      config:
+        sync_mode: full_refresh
+        destination_sync_mode: overwrite
+        cursor_field: []
+        primary_key: []
+        alias_name: price
+        selected: true
+  status: active
+  namespace_definition: source
+  namespace_format: ${SOURCE_NAMESPACE}
+  prefix: ''
+  schedule_type: manual
