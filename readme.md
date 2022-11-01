@@ -11,11 +11,15 @@ The project currently contains
 * dbt project modeling yahoo finance stuff in `dbt-model`
 * lightdash setup in `lightdash`
 
-Todo:
-
-* figure out how to get adding of airbyte resources with octavia cli to work
-
 Tip: If you're tired of managing docker containers by running commands all the time, check out [lazydocker](https://github.com/jesseduffield/lazydocker) and/or the [docker extension](https://code.visualstudio.com/docs/containers/overview) for VSCode.
+
+## Future work
+
+* Figure out how to get adding of airbyte resources with octavia cli to work
+* Handle currency-differences between stock-price and report numbers (use https://airbyte.com/connectors/exchange-rates-api?)
+* Get data a bunch of companies at the same time (all companies in a country? stock exchange? index?)
+* Add orchestration with e.g. Dagster
+* Add a Dockerfile for the whole project
 
 ## Warehouse setup
 
