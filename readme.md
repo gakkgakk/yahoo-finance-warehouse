@@ -29,6 +29,8 @@ First we will setup the database Airbyte will load the data into and where dbt w
 
 Let's get started!
 
+(If you'd like a more visual guide, see [this blog post](https://travbula.no/post/3))
+
 ### Prerequisites
 
 It is assumed that you are familiar some stuff: mainly the terminal, but also some docker, python and sql. It doesn't hurt if you know some dbt.
@@ -49,9 +51,9 @@ Start the container hosting the database
 docker-compose up -d
 ```
 
-Connect to the database somehow, e.g. through adminer at localhost:8080 in your web browser, and run the commands in `schemas.sql` and `users.sql`. The default login information is
+Connect to the database somehow, e.g. through adminer at localhost:8090 in your web browser, and run the commands in `schemas.sql` and `users.sql`. The default login information is
 
-* Server: db
+* Server: warehouse
 * Username: postgres
 * Password: postgres
 * Database: postgres
@@ -80,7 +82,7 @@ Add the source-yahoo-finance-financials connector by clicking Settings (at the b
 
 * Connector display name: Yahoo Finance Financials
 * Docker repository name: travbula/source-yahoo-finance-financials
-* Docker image tag: 0.1.30
+* Docker image tag: 0.1.32
 * Connector Documentation URL: https://travbula.no
 
 Do the same with airbyte/source-yahoo-finance-price with tag 0.1.0.
