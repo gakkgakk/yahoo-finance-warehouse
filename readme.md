@@ -17,7 +17,7 @@ Tip: If you're tired of managing docker containers by running commands all the t
 
 * Figure out how to get adding of airbyte resources with octavia cli to work
 * Handle currency-differences between stock-price and report numbers (use https://airbyte.com/connectors/exchange-rates-api?)
-* Get data a bunch of companies at the same time (all companies in a country? stock exchange? index?)
+* Get data a bunch of companies at the same time (all companies in a country? stock exchange? index?) - might be able to use the [yahoo finance screener](https://finance.yahoo.com/screener)
 * Add orchestration with e.g. Dagster
 * Add a Dockerfile for the whole project
 
