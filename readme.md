@@ -29,7 +29,7 @@ First we will setup the database Airbyte will load the data into and where dbt w
 
 Let's get started!
 
-(If you'd like a more visual guide, see [this blog post](https://travbula.no/post/3))
+(If you'd like a more visual guide, see [this blog post](https://vskaret.github.io/2023/03/19/yahoo-finance-warehouse.html))
 
 ### Prerequisites
 
