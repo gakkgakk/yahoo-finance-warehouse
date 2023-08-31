@@ -7,7 +7,7 @@ See [Warehouse setup](#warehouse-setup) below for a guide of how to set things u
 The project currently contains
 
 * postgres database configuration in `database`
-* airbyte setup with a connector for the yahoo finance api `airbyte`
+* airbyte setup with a connector for the yahoo finance api in `airbyte`
 * dbt project modeling yahoo finance stuff in `dbt-model`
 * lightdash setup in `lightdash`
 
